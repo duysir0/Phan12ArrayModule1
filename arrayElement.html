@@ -22,13 +22,17 @@
     }
     function display_array() {
         let e = "<hr/>";
-        document.getElementById("result").innerHTML = e; // d
+        document.getElementById("result").innerHTML = e;
         for (let i = 0; i < array.length; i++) {
             if(array[i]==""){e += `Phần tử tại vị trí ${i} = Rỗng <br/>`}
             else{e += `Phần tử tại vị trí ${i} = ${array[i]} <br/>`;
         }
-        document.getElementById("result").innerHTML = e;
-            console.log(array[i]) ;
+        document.getElementById("result").innerHTML =
+            `${e}
+            <br/>
+            <span style='color: blueviolet;'>Mảng hiện tại: [${array}]</span>`;
+            console.log(array[i]);
+
     }
     }
 
